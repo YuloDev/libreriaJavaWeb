@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlserver://localhost;database=agiles</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="libreria@localhost" uuid="59a8326e-5d7a-4e79-bd44-f2ad66ee4252">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/libreria</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

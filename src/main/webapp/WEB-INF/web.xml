@@ -5,7 +5,7 @@
          version="5.0">
 
     <servlet>
-        <servlet-name>Persona</servlet-name>
+        <servlet-name>Login</servlet-name>
         <servlet-class>controllers.ControladorUsuario</servlet-class>
     </servlet>
     <servlet>
@@ -13,8 +13,8 @@
         <servlet-class>controllers.ControladorLibro</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Persona</servlet-name>
-        <url-pattern>/persona</url-pattern>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Libro</servlet-name>
