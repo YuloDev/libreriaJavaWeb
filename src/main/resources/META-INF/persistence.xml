@@ -6,7 +6,6 @@
 
     <persistence-unit name="default">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>models.ModeloUsuarios</class>
         <properties>
             <property name="javax.persistence.jdbc.url"
                       value="jdbc:sqlserver://DESKTOP-TFBPSRC\SQLEXPRESS01;databaseName=agiles;integratedSecurity=true;encrypt=true;"/>

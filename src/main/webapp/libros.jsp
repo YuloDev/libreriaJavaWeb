@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="services.Libro" %>
 <%@ page import="java.util.List" %>
+<%@ page import="models.ModeloLibro" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,18 +14,17 @@
 <ul class="list-group">
     <li class="list-group-item active mt-5" aria-current="true">Libros</li>
     <%
-        Libro[] libros = (Libro[]) request.getAttribute("libros");
-        for (Libro libro : libros) {
+        List<ModeloLibro> libros = (List<ModeloLibro>) request.getAttribute("libros");
+        for (ModeloLibro libro : libros) {
     %>
-    <form action="libros" method="post">
-        <li class="list-group-item"><p><%=libro.getAutor()%>
-            <input type="hidden" value="<%=libro.getAutor()%>" name="libro">
-        </p>
-            <button type="submit" class="btn btn-primary">reservar</button>
-        </li>
-    </form>
-
-    <% }%>
+    <li class="list-group-item">Titulo:<%= libro.getTitulo() %> <br> Autor:<%=libro.getAutor()%> <br>
+        Catalogo: <%=libro.getCatalogo()%> <br>
+        <form action="libros" method="post">
+            <input type="hidden" name="libro" value="<%=libro.getTitulo()%>">
+            <button class="btn btn-success" type="submit">Reservar</button>
+        </form>
+    </li>
+    <% } %>
 </ul>
 
 <p class="text-danger">
@@ -34,13 +34,13 @@
 </p>
 
 <ul class="list-group">
-    <li class="list-group-item list-group-item-success" >Carrito</li>
+    <li class="list-group-item list-group-item-success">Carrito</li>
     <%
         List<Libro> carrito = (List<Libro>) request.getAttribute("carrito");
         if (carrito != null) {
             for (Libro libro : carrito) {
     %>
-    <li class="list-group-item"><%=libro.getAutor()%>
+    <li class="list-group-item"><%=libro.getTitulo()%>
     </li>
     <% }
     }%>

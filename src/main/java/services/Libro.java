@@ -5,12 +5,13 @@ public class Libro {
     EstadoLibro estadoLibro;
     Catalogo catalogo;
     String autor;
+    String titulo;
 
     public Libro() {
     }
 
-    public Libro(String autor) {
-        this.autor = autor;
+    public Libro(String titulo) {
+        this.titulo = titulo;
         this.estadoLibro = new Disponible();
     }
 
@@ -26,7 +27,7 @@ public class Libro {
     public String toString() {
         return "Libro{" +
                 "estadoLibro=" + estadoLibro +
-                ", autor='" + autor + '\'' +
+                ", titulo='" + titulo + '\'' +
                 '}';
     }
 
@@ -36,5 +37,13 @@ public class Libro {
 
     public String getAutor() {
         return this.autor;
+    }
+
+    public String getTitulo() {
+        return this.titulo;
+    }
+
+    public Catalogo getCatalogo() {
+        return this.catalogo;
     }
 }

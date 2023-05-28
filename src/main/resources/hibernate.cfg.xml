@@ -8,10 +8,13 @@
         <property name="hibernate.id.new_generator_mappings">true</property>
         <property name="hibernate.id.factory.bulk_id_strategy">org.hibernate.id.enhanced.SequenceStyleGenerator
         </property>
-        <property name="hibernate.connection.url">
-            jdbc:sqlserver://DESKTOP-TFBPSRC\SQLEXPRESS01;databaseName=agiles;integratedSecurity=true;encrypt=true;        </property>
-        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <mapping class="models.ModeloUsuarios"/>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/libreria</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">admin</property>
+        <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+        <mapping resource="ModeloEstudiante.hbm.xml"/>
+        <mapping resource="ModeloLibro.hbm.xml"/>
 
 
         <!-- <property name="connection.username"/> -->
