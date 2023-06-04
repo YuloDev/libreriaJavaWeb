@@ -29,8 +29,7 @@ public class ControladorUsuario extends HttpServlet {
         String usuario = req.getParameter("usuario");
         String contraseña = req.getParameter("contraseña");
         PrintWriter out = resp.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + "Bienvenido" + "</h1>");
-        out.println("</body></html>");
+
     }
 }
+

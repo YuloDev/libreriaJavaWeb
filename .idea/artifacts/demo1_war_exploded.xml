@@ -12,7 +12,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="demo1" />
+          <element id="module-output" name="libreriaJavaWeb" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.40.1.0" />
@@ -42,7 +42,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/demo1-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="demo1/web/Web" />
+      <element id="javaee-facet-resources" facet="libreriaJavaWeb/web/Web" />
     </root>
   </artifact>
 </component>
