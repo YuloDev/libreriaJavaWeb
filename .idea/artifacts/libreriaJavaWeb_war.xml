@@ -3,8 +3,15 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <properties id="maven-jee-properties">
       <options>
+<<<<<<< HEAD
         <module>libreriaJavaWeb</module>
         <packaging>war</packaging>
+=======
+        <exploded>false</exploded>
+        <module>libreriaJavaWeb</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+>>>>>>> github/master
       </options>
     </properties>
     <root id="archive" name="demo1-1.0-SNAPSHOT.war">
