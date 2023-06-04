@@ -8,6 +8,7 @@ public class Libro {
     String titulo;
 
     public Libro() {
+        this.estadoLibro = new Disponible();
     }
 
     public Libro(String titulo) {
@@ -45,5 +46,13 @@ public class Libro {
 
     public Catalogo getCatalogo() {
         return this.catalogo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 }
